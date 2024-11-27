@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-header side-space">
+            <div class="top-links">
+                <div class="group-1">
+                    <a class="right-border" href="tel: 1800 2666"><img src="./imgs/phone.png" alt="">1800 2666</a>
+                    <a class="right-border" href="#"><img src="./imgs/tel.png" alt="">Call Back</a>
+                    <a class="live-chat"><img src="./imgs/Oval.png" alt="">Live Chat</a>
+                </div>
+                <div class="group-2">
+                    <div class="demo">
+                        <a href="#">Renewals</a>
+                        <a href="#">Support</a>
+                        <a href="#">Info Centre</a>
+                        <a href="#">Investor Relations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-space main-header">
+            <div class="logo">
+                <a href="#"><img src="./imgs/Group 52.png" alt="ICICI Lombard"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Car Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Car Insurance 1</a></li>
+                            <li><a href="">Car Insurance 2</a></li>
+                            <li><a href="">Car Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Two Wheeler Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Two Wheeler Insurance 1</a></li>
+                            <li><a href="">Two Wheeler Insurance 2</a></li>
+                            <li><a href="">Two Wheeler Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Health Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Health Insurance 1</a></li>
+                            <li><a href="">Health Insurance 2</a></li>
+                            <li><a href="">Health Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">Travel Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Travel Insurance 1</a></li>
+                            <li><a href="">Travel Insurance 2</a></li>
+                            <li><a href="">Travel Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle">Other Insurance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Other Insurance 1</a></li>
+                            <li><a href="">Other Insurance 2</a></li>
+                            <li><a href="">Other Insurance 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Claims</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Claims 1</a></li>
+                            <li><a href="">Claims 2</a></li>
+                            <li><a href="">Claims 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="login">
+                        <a href="#" class="">Login</a>
+                    </li>
+
+                </ul>
+                <button class="menu-toggle">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="side-space">
+            <div class="banner">
+                <div class="d-flex desk-row">
+                    <div class="banner-text d-flex desk-row">
+                        <div class="text-left">
+                            <h1 class="h1 heading">Car insurance</h1>
+                            <h2 class="h2 subheading">Prices starting at just ₹2,094/yr</h2>
+                            <p class="banner-text">This amount refers to the TP rates only</p>
+                            <div class="banner-list">
+                                <div class="list-item">
+                                    <img class="icon" src="./imgs/Repairs 1.png" alt="">
+                                    <p>Doorstep Cashless Repairs</p>
+                                    <img src="./imgs/Group 5754.png" alt="">
+                                </div>
+                                <div class="list-item">
+                                    <img class="icon" src="./imgs/Group.png" alt="">
+                                    <p>₹15 lakh Personal Accident Cover</p>
+                                </div>
+                                <div class="list-item">
+                                    <img class="icon" src="./imgs/Frame.png" alt="">
+                                    <p>Drive less? Pay less with PAYD add-on</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner-image">
+                            <img src="./imgs/Group 34132.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="banner-form">
+                        <form id="formValidation">
+
+                            <div class="fields">
+                                <div class="group">
+                                    <label for="carRegistration" class="label">Car Registration Number:</label>
+                                    <input type="text" id="carRegistration" class="input" name="carRegistration"
+                                        placeholder="Car Registration Number:" />
+                                    <small class="error" id="carRegistrationError"></small>
+                                </div>
+
+                                <div class="group">
+                                    <label for="mobileNumber">Mobile Number:</label>
+                                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile no." />
+                                    <small class="error" id="mobileNumberError"></small>
+                                </div>
+
+                                <div class="group">
+                                    <label for="emailAddress">Email:</label>
+                                    <input type="email" id="emailAddress" name="emailAddress" placeholder="Email" />
+                                    <small class="error" id="emailAddressError"></small>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn">Get quote</button>
+                            <a href="#" class="retrieve-quote">Retrieve quote</a>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                            </div>
+                        </form>
+
+                        <div class="renew-policy">
+                            <a href="#">Renew your ICICI Lombard policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-1">
+        <div class="side-space padd">
+            <h1 class="h1 text-center">
+                What are the different types of car insurance policies?
+            </h1>
+
+            <div class="policy-slider">
+
+                <div class="slider">
+                    <div>
+                        <div class="d-flex desk-row">
+                            <div class="slider-img">
+                                <img src="./imgs/slider-img.png" alt="">
+                            </div>
+                            <div class="slider-text">
+                                <p><strong>Comprehensive car insurance policy</strong></p>
+                                <p>Comprehensive car insurance, also known as a private car package policy, is a type of
+                                    auto insurance that provides complete coverage for your vehicle. It is an optional
+                                    car insurance policy but is highly recommended for car owners who want the best
+                                    protection for their four-wheelers.</p>
+                                <p>Comprehensive car insurance covers damage caused by natural disasters, accidents,
+                                    theft, fire, and other such incidents. It covers damages to both your vehicle and
+                                    third-party vehicles and property. This car insurance policy also covers third-party
+                                    liabilities, which will cover any legal costs or compensation you may be liable for
+                                    in case of an accident caused due to your fault. In addition, some comprehensive
+                                    policies also offer additional benefits such as roadside assistance, towing service
+                                    and more. Even though comprehensive insurance policies tend to be more expensive
+                                    than Third-Party Liability or Standalone Own Damage policies, but they offer broader
+                                    coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex desk-row">
+                            <div class="slider-img">
+                                <img src="./imgs/slider-img.png" alt="">
+                            </div>
+                            <div class="slider-text">
+                                <p><strong>Comprehensive car insurance policy 2</strong></p>
+                                <p>Comprehensive car insurance, also known as a private car package policy, is a type of
+                                    auto insurance that provides complete coverage for your vehicle. It is an optional
+                                    car insurance policy but is highly recommended for car owners who want the best
+                                    protection for their four-wheelers.</p>
+                                <p>Comprehensive car insurance covers damage caused by natural disasters, accidents,
+                                    theft, fire, and other such incidents. It covers damages to both your vehicle and
+                                    third-party vehicles and property. This car insurance policy also covers third-party
+                                    liabilities, which will cover any legal costs or compensation you may be liable for
+                                    in case of an accident caused due to your fault. In addition, some comprehensive
+                                    policies also offer additional benefits such as roadside assistance, towing service
+                                    and more. Even though comprehensive insurance policies tend to be more expensive
+                                    than Third-Party Liability or Standalone Own Damage policies, but they offer broader
+                                    coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex desk-row">
+                            <div class="slider-img">
+                                <img src="./imgs/slider-img.png" alt="">
+                            </div>
+                            <div class="slider-text">
+                                <p><strong>Comprehensive car insurance policy 3</strong></p>
+                                <p>Comprehensive car insurance, also known as a private car package policy, is a type of
+                                    auto insurance that provides complete coverage for your vehicle. It is an optional
+                                    car insurance policy but is highly recommended for car owners who want the best
+                                    protection for their four-wheelers.</p>
+                                <p>Comprehensive car insurance covers damage caused by natural disasters, accidents,
+                                    theft, fire, and other such incidents. It covers damages to both your vehicle and
+                                    third-party vehicles and property. This car insurance policy also covers third-party
+                                    liabilities, which will cover any legal costs or compensation you may be liable for
+                                    in case of an accident caused due to your fault. In addition, some comprehensive
+                                    policies also offer additional benefits such as roadside assistance, towing service
+                                    and more. Even though comprehensive insurance policies tend to be more expensive
+                                    than Third-Party Liability or Standalone Own Damage policies, but they offer broader
+                                    coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-2">
+        <div class="side-space padd">
+            <h1 class="h1 text-center">What’s included and what’s not?</h1>
+            <div class="tabs">
+                <ul id="tabs-nav">
+                    <li><a href="#tab1">Inclusions</a></li>
+                    <li><a href="#tab2">Exclusions</a></li>
+                </ul> <!-- END tabs-nav -->
+                <div id="tabs-content">
+                    <div id="tab1" class="tab-content">
+                        <strong>
+                            <p>What’s included:</p>
+                        </strong>
+                        <ul class="grid-2">
+                            <li>
+                                <p>Coverage for natural disasters like earthquakes, floods, fires and storms</p>
+                            </li>
+                            <li>
+                                <p>₹15 lakh Personal Accident Cover</p>
+                            </li>
+                            <li>
+                                <p>Cashless repairs in 5100+ network garages</p>
+                            </li>
+                            <li>
+                                <p>9 add ons to choose from</p>
+                            </li>
+                            <li>
+                                <p>Coverage for theft, accidents and terrorist activities</p>
+                            </li>
+                            <li>
+                                <p>Third-party legal liabilities cover</p>
+                            </li>
+                            <li>
+                                <p>No claim bonus up to 50%</p>
+                            </li>
+                            <li>
+                                <p>Instant claim settlement via InstaSpect</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab2" class="tab-content">
+                        <strong>
+                            <p>Exclusive</p>
+                        </strong>
+                        <p>Text...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-doc d-flex desk-row">
+                <strong>
+                    <p>Policy documents:</p>
+                </strong>
+                <div class="d-flex desk-row">
+                    <p class="policy-link right-border"><a href="#" class="link">Private car package policy wordings</a>
+                    </p>
+                    <p class="policy-link right-border"><a href="#" class="link">Stand-alone own damage private car
+                            insurance policy wording</a></p>
+                    <p class="policy-link"><a href="#" class="link">Private car package policy wordiPrivate car
+                            liability policy wordingngs</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-7">
+        <div class="side-space padd">
+            <h1 class="h1 text-center">
+
+            </h1>
+            <div class="grid-four">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="side-space">
+            <div class="d-flex desk-row">
+                <div class="footer-left">
+                    <img src="./imgs/footer-logo.png" alt="">
+                    <h4>
+                        ICICI Lombard General Insurance Company Limited,
+                    </h4>
+                    <p>
+                        ICICI Lombard House, 414, Veer Savarkar Marg, Near Siddhi Vinayak Temple, Prabhadevi, Mumbai -
+                        400025.
+                    </p>
+                    <p>
+                        Email: customersupport@icicilombard.com
+                    </p>
+                    <p>
+                        Fax no - 022 61961323
+                    </p>
+                    <div class="social-media">
+                        <div class="d-flex row">
+                            <a href="#">
+                                <img src="./imgs/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/linked-in.png" alt="linkedIn">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/you-tube.png" alt="You Tube">
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/insta.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p>
+                        ICICI Lombard General Insurance Ltd. is one of the largest private sector general insurance
+                        company in India offering insurance coverage for motor, health, travel, home, student travel and
+                        more. Policies can be purchased and renewed online as well. Immediate issuance of policy copy
+                        online.
+                    </p>
+                    <p>
+                        ICICI trade logo displayed above belongs to ICICI Bank and is used by ICICI Lombard GIC Ltd.
+                        under license and Lombard logo belongs to ICICI Lombard GIC Ltd assigned by Northbridge
+                        Financial Corporation solely for the territory of India. Insurance is the subject matter of the
+                        solicitation. The advertisement contains only an indication of cover offered. For more details
+                        on risk factors, terms, conditions and exclusions, please read the sales brochure carefully
+                        before concluding a sale. CIN: L67200MH2000PLC129408
+                    </p>
+
+                    <div class="companies">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <!-- slick javascript cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</body>
+
+</html>
