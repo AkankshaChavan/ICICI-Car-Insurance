@@ -150,3 +150,20 @@ $(document).ready(function () {
     });
 
 });
+
+$(document).ready(function () {
+    $('#que-nav li:first-child').addClass('active');
+    $('.info-content').hide();
+    $('.info-content:first').show();
+
+    $('#que-nav li').click(function () {
+        $('#que-nav li').removeClass('active');
+        $(this).addClass('active');
+        $('.info-content').hide();
+
+        var activeTab = $(this).find('a').attr('href');
+        $(activeTab).fadeIn();
+        return false;
+    });
+
+});

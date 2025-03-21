@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: Mulish;
   src: url("./font/Mulish-Regular.ttf");
@@ -13,9 +14,11 @@ body {
   font-size: 16px;
   font-family: Mulish;
 }
-p{
+
+p {
   font-size: 16px;
 }
+
 /* Common Classes */
 .side-space {
   padding: 0 5%;
@@ -56,8 +59,11 @@ p{
 .mb-0 {
   margin-bottom: 0;
 }
+.mt-2 {
+  margin-top: 2rem;
+}
 .mb-2 {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 /* Header */
@@ -434,7 +440,7 @@ form {
   width: 75%;
 }
 
-.slider-text strong{
+.slider-text strong {
   font-size: 20px;
 }
 
@@ -463,6 +469,7 @@ form {
   justify-content: center;
   gap: 20px;
 }
+
 .love-cust-main .d-flex {
   background-color: #fff;
   padding: 10px 20px;
@@ -478,6 +485,7 @@ form {
   font-size: 20px;
   margin-bottom: 0;
 }
+
 .what-car-insurance {
   padding: 30px 0;
 }
@@ -489,22 +497,27 @@ form {
 .comprehensive {
   padding: 30px 0;
 }
+
 .responsive-table {
   width: 100%;
   border-collapse: collapse;
 }
+
 .responsive-table th,
 .responsive-table td {
   border: 1px solid #E1E0D1;
   padding: 12px;
   text-align: left;
 }
+
 .responsive-table th {
   background-color: #E1E0D1;
 }
+
 .responsive-table tr:nth-child(even) {
   background-color: #F5F6F6;
 }
+
 .text-section {
   margin-top: 20px;
   line-height: 1.6;
@@ -515,19 +528,20 @@ form {
   padding: 30px 0;
 }
 
-.online-policy h1 {
-}
+.online-policy h1 {}
 
 .section {
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .main-heading {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -535,16 +549,19 @@ form {
   justify-content: space-between;
   margin-bottom: 25px;
 }
+
 .box {
   color: #fff;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #065e9e;
 }
+
 .row {
   display: flex;
   gap: 20px;
 }
+
 .num {
   color: #ec6625;
   text-align: center;
@@ -672,7 +689,7 @@ ul.grid-2 li p {
 .premium-main .first-div table {
   border-collapse: collapse;
   margin-top: 15px;
-  border-spacing: 0px!important;
+  border-spacing: 0px !important;
 }
 
 .premium-main table tr td {
@@ -687,6 +704,7 @@ ul.grid-2 li p {
 .second-row {
   background-color: #F5F6F6;
 }
+
 .main-div {
   width: 50%;
 }
@@ -698,16 +716,91 @@ ul.grid-2 li p {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.searches-sec{
-    background-color: #F8F6F6;
-    padding: 30px 0;
+
+
+.common-que{
+
 }
-.search-container {
-  padding: 20px 20px;
+ul#que-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c9c9c9;
+  padding: 0;
 }
 
-.search-container h3 {
+ul#que-nav li {
+  padding: 10px 20px;
+}
+
+ul#que-nav li a {
+  color: #838383;
+  text-decoration: none;
+}
+
+ul#que-nav li.active {
+  border-bottom: 1px solid #ec6625;
+}
+
+ul#que-nav li.active a {
+  color: #ec6625;
+}
+
+.info-content{
+  /* padding: 20px 0; */
+}
+
+
+.reviews {
+  padding: 60px 0;
+}
+
+.review-container img {
   text-align: center;
+}
+
+.review-main {
+  display: flex;
+  justify-content: center;
+}
+
+.review-div {
+  display: flex;
+  gap: 30px;
+  width: 70%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+}
+
+.review-img {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.dot-img {
+  text-align: center;
+}
+
+.read-button {
+  font-size: 16px;
+  padding:  13px 24px;
+  border: 1px solid #f26422;
+  text-align: center;
+  color: #f26422;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.searches-sec {
+  background-color: #F8F6F6;
+  padding: 30px 0;
+}
+
+.search-container {
+  padding: 20px 20px;
 }
 
 .searchMain {
@@ -722,45 +815,53 @@ ul.grid-2 li p {
 }
 
 .searches a {
-    width: auto;
-    display: inline-block;
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 25px;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    word-break: keep-all;
+  width: auto;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  word-break: keep-all;
 }
 
 
-.carInsurance{
-    background-color: #00305B;
-    padding: 30px 0;
+.carInsurance {
+  background-color: #00305B;
+  padding: 30px 0;
 }
-.carInsurance h3{
-    font-size: 32px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
+
+.carInsurance h3 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
 }
-.typesOfCar{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto auto auto;
+
+.typesOfCar {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto auto;
 }
-.cars{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    background-color: #ffffff;
-    border: 0;
-    border-radius: 10px;
+
+.cars {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 10px;
 }
-.modelName{
-    font-size: 16px;
+
+.modelName {
+  font-size: 16px;
+}
+
+.product-code {
+  padding: 30px 0;
 }
 
 footer {
@@ -870,6 +971,10 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
   .desk-row {
     flex-direction: column;
   }
@@ -900,12 +1005,12 @@ footer p {
     width: 100%;
   }
 
-  .comprehensive {
-  }
+  .comprehensive {}
 
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .responsive-table,
   .responsive-table th,
   .responsive-table td {
@@ -963,21 +1068,27 @@ footer p {
     text-align: center;
   }
 
-  .buyMain-Card{
+  .buyMain-Card {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .main-div {
     width: 100%;
-}
+  }
 
-.searches a {
+  .searches a {
     padding: 3px 6px;
     font-size: 12px;
-}
+  }
 
-.typesOfCar{
-  grid-template-columns: auto auto;
-}
+  .typesOfCar {
+    grid-template-columns: auto auto;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 
   footer {
     background: #ece9e9;
@@ -1002,7 +1113,6 @@ footer p {
 @media (max-width: 580.5px) {
   .typesOfCar {
     grid-template-columns: auto;
-}
+  }
 
 }
-
