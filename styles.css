@@ -1082,6 +1082,9 @@ footer p {
   .love-label, .customer-name {
     font-size: 14px;
   }
+  .h1{
+    font-size: 24px;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
