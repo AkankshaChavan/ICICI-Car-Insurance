@@ -96,11 +96,13 @@
                         </ul>
                     </li>
 
-                    <li class="login">
+                    <li class="in-toggle-nav">
                         <a href="#" class="">Login</a>
                     </li>
 
                 </ul>
+
+                <a href="#" class="login desk-nav">Login</a>
                 <button class="menu-toggle">
                     ☰
                 </button>
@@ -134,7 +136,7 @@
                             </div>
                         </div>
 
-                        <div class="banner-image">
+                        <div class="banner-image text-center">
                             <img src="./imgs/Group 34132.png" alt="">
                         </div>
                     </div>
@@ -147,13 +149,13 @@
                                 <div class="group">
                                     <label for="carRegistration" class="label">Car Registration Number:</label>
                                     <input type="text" id="carRegistration" class="input" name="carRegistration"
-                                        placeholder="Car Registration Number:" />
+                                        placeholder="Car Registration Number:" maxlength="7" />
                                     <small class="error" id="carRegistrationError"></small>
                                 </div>
 
                                 <div class="group">
                                     <label for="mobileNumber">Mobile Number:</label>
-                                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile no." />
+                                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile no." maxlength="10" />
                                     <small class="error" id="mobileNumberError"></small>
                                 </div>
 
@@ -168,14 +170,15 @@
                             <a href="#" class="retrieve-quote">Retrieve quote</a>
 
                             <div class="checkbox">
-                                <input type="checkbox" id="terms" required>
+                                <input type="checkbox" id="terms" required checked>
                                 <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                            </div>
+
+                            <div class="renew-policy">
+                                <a href="#">Renew your ICICI Lombard policy</a>
                             </div>
                         </form>
 
-                        <div class="renew-policy">
-                            <a href="#">Renew your ICICI Lombard policy</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -253,7 +256,7 @@
 
                 <div class="slider">
                     <div>
-                        <div class="d-flex desk-row">
+                        <div class="d-flex desk-row no-wrap">
                             <div class="slider-img">
                                 <img src="./imgs/slider-img.png" alt="">
                             </div>
@@ -276,7 +279,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="d-flex desk-row">
+                        <div class="d-flex desk-row no-wrap">
                             <div class="slider-img">
                                 <img src="./imgs/slider-img.png" alt="">
                             </div>
@@ -299,7 +302,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="d-flex desk-row">
+                        <div class="d-flex desk-row no-wrap">
                             <div class="slider-img">
                                 <img src="./imgs/slider-img.png" alt="">
                             </div>
@@ -330,6 +333,9 @@
     <section class="comprehensive">
         <div class="side-space">
             <h1 class="h1 text-center">Comprehensive Car Insurance vs Third-Party Car Insurance</h1>
+        </div>
+        <div class="side-space comp-inner">
+            <div class="responsive-table">
             <table class="responsive-table">
                 <thead>
                     <tr>
@@ -360,6 +366,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
             <div class="text-section">
                 <p>Comprehensive car insurance is a more comprehensive policy that covers not only third-party
                     liabilities but also damage to your own vehicle. On the other hand, third-party car insurance only
@@ -505,8 +512,7 @@
                     </p>
                     <p class="policy-link right-border"><a href="#" class="link">Stand-alone own damage private car
                             insurance policy wording</a></p>
-                    <p class="policy-link"><a href="#" class="link">Private car package policy wordiPrivate car
-                            liability policy wordingngs</a></p>
+                    <p class="policy-link"><a href="#" class="link">Private car liability policy wording</a></p>
                 </div>
             </div>
         </div>
@@ -582,6 +588,8 @@
                     <h4>Your car insurance premium includes three major components:</h4>
                     <ol class='first-div'>
                         <li>
+                            <span class="num">1</span>
+                            <div class="first-div-text">
                             Third-party liability premium – this is stipulated by the Insurance Regulatory and
                             Development Authority of India (IRDAI), and it is directly proportional to your car’s cubic
                             capacity.
@@ -603,10 +611,15 @@
                                     <td>₹7,897</td>
                                 </tr>
                             </table>
+                        </div>
                         </li>
-                        <li>Own damage premium – this is calculated as IDV X [Tariff Rate] – [Discounts] + Add on Covers
-                        </li>
-                        <li>Personal accident cover premium + Additional covers</li>
+                        <li>
+                            <span class="num">2</span>
+                            <div class="first-div-text">Own damage premium – this is calculated as IDV X [Tariff Rate] – [Discounts] + Add on Covers
+                            </div>
+                            </li>
+                        <li><span class="num">3</span>
+                            <div class="first-div-text">Personal accident cover premium + Additional covers</div></li>
                     </ol>
                 </div>
                 <div class='main-div'>
@@ -686,7 +699,7 @@
                         <p class="mt-2 mb-0"><strong>Where can I check my car insurance policy details?</strong></p>
                         <p>You can check all your car insurance details in your policy documents. You can also login to
                             our website or IL Take Care app to check the below details:</p>
-                        <ul>
+                        <ul class="arw-list">
                             <li>Policy number</li>
                             <li>Policy start and end date</li>
                             <li>Policy type (Comprehensive/OD only/TP only)</li>
@@ -723,20 +736,6 @@
 
                 </div>
             </div>
-
-            <div class="policy-doc d-flex desk-row">
-                <p>
-                    <strong>Policy documents:</strong>
-                </p>
-                <div class="d-flex desk-row">
-                    <p class="policy-link right-border"><a href="#" class="link">Private car package policy wordings</a>
-                    </p>
-                    <p class="policy-link right-border"><a href="#" class="link">Stand-alone own damage private car
-                            insurance policy wording</a></p>
-                    <p class="policy-link"><a href="#" class="link">Private car package policy wordiPrivate car
-                            liability policy wordingngs</a></p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -744,37 +743,53 @@
         <div class='review-container side-space'>
             <h1 class="h1 text-center">Ratings and reviews</h1>
             <div class='review-main'>
-
-                <img src="./imgs/Group 194.png" />
+                <div class="d-flex nowrap">
+                    <img src="./imgs/Group 192.png" alt="">
+                    <div>
+                        <p><strong>Our customers have rated us</strong></p>
+                        <p>Based on 456 reviews</p>
+                    </div>
+                </div>
             </div>
             <div class='review-img'>
-                <div>
-                    <img src='./imgs/Group 126.png' width="100%" />
-                </div>
-                <div class='review-div'>
+                <div class='review-div review-slider'>
                     <div>
-                        <img src='./imgs/Group 118.png' />
+                        <div class="d-flex no-wrap">
+                            <p class="customer-name">Kumar Ambuj</p>
+                            <img src="./imgs/Group 152.png" alt="">
+                        </div>
                         <p>The interaction was good. The customer service associate gave me answers to all my queries.
                             Her presence while making the decision to buy was helpful. I will definitely recommend ICICI
                             Lombard to my friends and family for the way they treat customers.</p>
                     </div>
-                    <div class="desktop">
-                        <img src='./imgs/Group 118new.png' />
+                    <div>
+                        <div class="d-flex no-wrap">
+                            <p class="customer-name">Sanjay Achliya </p>
+                            <img src="./imgs/Group 215.png" alt="">
+                        </div>
                         <p>Very good experience. The agent gave me all the information clearly and didn't mind repeating
                             certain points until I understood. I don't fully get technology, but she offered to take
                             care of the whole process of buying the car insurance policy without any hassle.
                             I am truly thankful.</p>
                     </div>
-                </div>
-                <div>
-                    <img src='./imgs/Group 119.png' width="100%" />
+                    <div>
+                        <div class="d-flex no-wrap">
+                            <p class="customer-name">Kumar Ambuj</p>
+                            <img src="./imgs/Group 152.png" alt="">
+                        </div>
+                        <p>The interaction was good. The customer service associate gave me answers to all my queries.
+                            Her presence while making the decision to buy was helpful. I will definitely recommend ICICI
+                            Lombard to my friends and family for the way they treat customers.</p>
+                    </div>
+                    <!-- <div>
+                        <img src='./imgs/Group 118new.png' />
+                        <p>Very good experience. The agent gave me all the information clearly and didn't mind repeating
+                            certain points until I understood. I don't fully get technology, but she offered to take
+                            care of the whole process of buying the car insurance policy without any hassle.
+                            I am truly thankful.</p>
+                    </div> -->
                 </div>
 
-            </div>
-            <div class='dot-img'>
-                <img src='./imgs/Group 26.png' />
-                <br></br>
-                <button class='read-button'>Read all reviews</button>
             </div>
         </div>
     </section>
@@ -912,6 +927,7 @@
 
     <section class="product-code">
         <div class="side-space">
+            <div class="responsive-table">
             <table class="responsive-table">
                 <thead>
                     <tr>
@@ -939,8 +955,17 @@
                 </tbody>
             </table>
         </div>
+        </div>
     </section>
 
+<div class="above-footer">
+    <div class="side-space">
+        <div class="d-flex no-wrap">
+            <div class="left-links"><p><a href="">Home</a> <img src="./imgs/Fill 1.svg" alt=""> <a href="">Motor Insurance</a> <img src="./imgs/Fill 1.svg" alt=""> <span>Car Insurance</span></p></div>
+            <div class="right-links"><p><a href="" class="link">Disclaimers</a></p></div>
+        </div>
+    </div>
+</div>
 
     <footer>
         <div class="side-space">

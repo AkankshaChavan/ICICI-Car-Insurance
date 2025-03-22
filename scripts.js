@@ -135,6 +135,34 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+    $('.review-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+$(document).ready(function () {
     $('#tabs-nav li:first-child').addClass('active');
     $('.tab-content').hide();
     $('.tab-content:first').show();

@@ -14,14 +14,18 @@ body {
   font-size: 16px;
   font-family: Mulish;
 }
-
+.h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: normal;
+}
 p {
   font-size: 16px;
 }
 
 /* Common Classes */
 .side-space {
-  padding: 0 5%;
+  padding: 0 5.4%;
 }
 
 .d-flex {
@@ -48,7 +52,7 @@ p {
 
 .link {
   color: #f26422;
-  border-bottom: 1px solid #f26422;
+  font-weight: 700;
 }
 
 .right-border {
@@ -154,6 +158,7 @@ p {
   width: 80%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-links {
@@ -176,9 +181,9 @@ p {
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+/* .nav-links a:hover {
   color: #f4811f;
-}
+} */
 
 .dropdown-menu {
   display: none;
@@ -204,17 +209,18 @@ p {
 
 .dropdown-toggle:after {
   content: url("./imgs/down-white.png");
-  margin-left: 2px;
-  margin-bottom: 1px;
+  margin-left: 4px;
+  margin-bottom: 2px;
   display: inline-block;
   vertical-align: bottom;
 }
-
-.login {
-  padding-left: 60px;
+a.login {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
 }
-
-.login a:after {
+a.login:after {
   content: url("./imgs/right.png");
   margin-left: 2px;
   margin-bottom: 1px;
@@ -232,7 +238,7 @@ p {
 }
 
 .hero-section {
-  padding: 30px 0;
+  padding: 40px 0 120px;
 }
 
 .banner-text {
@@ -287,18 +293,18 @@ p {
 
 .list-item p {
   font-family: Mulish;
-  font-size: 16px;
   line-height: 19px;
   text-align: left;
 }
 
 .banner-image img {
-  width: 350px;
+  width: 90%;
 }
 
 .banner-form {
   width: 35%;
   position: relative;
+  z-index: 2;
 }
 
 form {
@@ -337,6 +343,8 @@ form {
   border-radius: 4px;
   margin-bottom: 10px;
 }
+
+
 
 .error {
   width: 90%;
@@ -377,7 +385,17 @@ form {
 }
 
 .checkbox input:checked {
-  background: #f4811f !important;
+  accent-color: #f4811f !important;
+  position: relative;
+  z-index: 0;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+  content: url(./imgs/Group-205.png); 
+  font-size: 16px;  
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .checkbox input {
@@ -398,12 +416,17 @@ form {
 }
 
 .renew-policy {
-  width: 290px;
+  width: 270px;
+  position: absolute;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
-  background: rgba(255, 242, 235, 1);
+  background: linear-gradient(0deg, #fff2eb 0%, #fff2eb 24%, transparent 100%);
   border-radius: 0px 0px 15px 15px;
+  left: 0;
+  right: 0;
+  margin-top: 29px;
+  z-index: 0;
 }
 
 .renew-policy a {
@@ -412,44 +435,47 @@ form {
 
 .section-1 {
   background: #fff2eb;
-  padding: 30px 0;
+  padding: 60px 0;
+}
+.section-1 h1 {
+  margin-bottom: 30px;
 }
 
 .policy-slider {
-  width: 80%;
+  width: 72.6%;
   margin: 0 auto;
-  padding: 25px;
+  padding: 25px 50px 50px;
   background: #fff;
   border-radius: 20px;
 }
 
 .policy-slider .desk-row {
   align-items: start;
+  gap: 48px;
 }
 
 .slider-img {
-  width: 25%;
   padding-top: 20px;
 }
 
 .slider-img img {
-  width: 80%;
+  width: 170px;
 }
-
+/* 
 .slider-text {
   width: 75%;
-}
+} */
 
 .slider-text strong {
   font-size: 20px;
 }
 
 .slick-prev {
-  left: -100px !important;
+  left: -140px !important;
 }
 
 .slick-next {
-  right: -50px !important;
+  right: -90px !important;
 }
 
 .slick-prev::before {
@@ -461,7 +487,7 @@ form {
 }
 
 .why-our-customers {
-  padding: 30px 0;
+  padding: 60px 0 50px;
   background-color: #f8f6f6;
 }
 
@@ -472,7 +498,7 @@ form {
 
 .love-cust-main .d-flex {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 25px 30px;
   width: 85%;
   gap: 20px;
   align-items: center;
@@ -483,39 +509,52 @@ form {
   color: #ec6625;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.love-cust-main p {
+  margin: 0;
 }
 
 .what-car-insurance {
-  padding: 30px 0;
+  padding: 60px 0 120px;
 }
 
 .what-car-insurance .d-flex {
-  gap: 30px;
+  gap: 100px;
 }
 
 .comprehensive {
-  padding: 30px 0;
+  padding: 60px 0 80px;
 }
-
+.comprehensive h1 {
+  margin-bottom: 40px;
+}
+.comprehensive .comp-inner {
+  max-width: 878px;
+  margin: 0 auto;
+}
 .responsive-table {
+  max-width: 1240px;
+  margin: 0 auto;
   width: 100%;
   border-collapse: collapse;
+  border-radius: 10px;
 }
 
 .responsive-table th,
 .responsive-table td {
-  border: 1px solid #E1E0D1;
+  border: 1px solid #e1e0d1;
   padding: 12px;
   text-align: left;
 }
 
 .responsive-table th {
-  background-color: #E1E0D1;
+  background-color: #e1e0d1;
 }
 
 .responsive-table tr:nth-child(even) {
-  background-color: #F5F6F6;
+  background-color: #f5f6f6;
 }
 
 .text-section {
@@ -525,10 +564,12 @@ form {
 
 .online-policy {
   background-color: #00305b;
-  padding: 30px 0;
+  padding: 70px 0;
 }
 
-.online-policy h1 {}
+.online-policy h1 {
+  margin-bottom: 40px;
+}
 
 .section {
   padding: 20px;
@@ -565,7 +606,7 @@ form {
 .num {
   color: #ec6625;
   text-align: center;
-  font-size: 26px;
+  font-size: 45px;
   font-weight: 700;
   border-radius: 50%;
   margin: 5px 0;
@@ -573,10 +614,12 @@ form {
 
 .section-2 {
   padding: 30px 0;
+  background-color: #f8f6f6;
 }
 
 .tabs {
-  border-bottom: 1px solid #c9c9c9;
+  max-width: 878px;
+  margin: 0 auto;
 }
 
 ul#tabs-nav {
@@ -616,7 +659,7 @@ ul.grid-2 {
 }
 
 ul.grid-2 li {
-  list-style: url("./imgs/green-dot.png");
+  list-style: url("./imgs/Frame 241.png");
   padding: 0px 30px 0px 5px;
   margin: 10px 0;
 }
@@ -644,15 +687,16 @@ ul.grid-2 li p {
 
 .buy {
   background-color: #f8f6f6;
-  padding-top: 40px;
+  padding-top: 60px;
+  margin-top: -30px;
 }
 
 .buyMain-Card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* background: #FFFFFF; */
-  gap: 20px;
-  padding: 40px 0;
+  gap: 25px;
+  padding: 50px 0;
 }
 
 .buy-cards h3 {
@@ -675,7 +719,10 @@ ul.grid-2 li p {
 }
 
 .primium {
-  padding: 30px 0;
+  padding: 50px 0;
+}
+.primium h1 {
+  margin-bottom: 20px;
 }
 
 .premium-container h3 {
@@ -684,6 +731,7 @@ ul.grid-2 li p {
 
 .premium-main {
   align-items: flex-start;
+  gap: 60px;
 }
 
 .premium-main .first-div table {
@@ -692,17 +740,39 @@ ul.grid-2 li p {
   border-spacing: 0px !important;
 }
 
+ol.first-div {
+  list-style: none;
+  padding-left: 0;
+}
+ol.first-div li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+ol.first-div li .num {
+  font-size: 30px;
+  line-height: normal;
+  margin: 0;
+}
+
+ul.first-div {
+  list-style: url(./imgs/Path.svg);
+  padding-left: 20px;
+}
+
 .premium-main table tr td {
   border: 1px solid #eaeaea;
   padding: 10px;
 }
 
 .first-row {
-  background-color: #E1E0D1;
+  background-color: #e1e0d1;
 }
 
 .second-row {
-  background-color: #F5F6F6;
+  background-color: #f5f6f6;
 }
 
 .main-div {
@@ -717,9 +787,13 @@ ul.grid-2 li p {
   flex-wrap: wrap;
 }
 
-
-.common-que{
-
+.common-que {
+  padding: 60px 0 80px;
+  background-color: #f8f6f6;
+}
+ul.arw-list{
+  list-style: url(./imgs/Path.svg);
+  padding-left: 20px;
 }
 ul#que-nav {
   list-style: none;
@@ -747,15 +821,24 @@ ul#que-nav li.active a {
   color: #ec6625;
 }
 
-.info-content{
+.info-content {
   /* padding: 20px 0; */
 }
-
 
 .reviews {
   padding: 60px 0;
 }
+.reviews h1{
+  margin-bottom: 20px;
+}
 
+.review-main .d-flex{
+  align-items: center;
+  gap: 25px
+}
+.review-main p{
+  margin: 0;
+}
 .review-container img {
   text-align: center;
 }
@@ -767,11 +850,26 @@ ul#que-nav li.active a {
 
 .review-div {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   width: 70%;
   margin: 0 auto;
   background: #fff;
+  margin-top: 50px;
+}
+.review-div .d-flex{
+  align-items: center;
+  gap: 25px;
+}
+.customer-name{
+font-weight: 700;
+font-size: 18px;
+margin: 0;
+}
+.review-div .slick-slide {
   padding: 20px;
+  background-image: url(./imgs/Group-7.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 5%;
 }
 
 .review-img {
@@ -780,13 +878,25 @@ ul#que-nav li.active a {
   align-items: center;
 }
 
-.dot-img {
-  text-align: center;
+.slick-dots li.slick-active button:before {
+  /* color: #F58220 !important; */
+  content: url(./imgs/Rectangle.png);
+  font-size: 12px;
+  margin-bottom: -5px;
 }
+
+.slick-dots li button:focus:before{
+  color: #EAEAEA!important;
+  font-size: 10px;
+}
+
+/* .dot-img {
+  text-align: center;
+} */
 
 .read-button {
   font-size: 16px;
-  padding:  13px 24px;
+  padding: 13px 24px;
   border: 1px solid #f26422;
   text-align: center;
   color: #f26422;
@@ -795,8 +905,8 @@ ul#que-nav li.active a {
 }
 
 .searches-sec {
-  background-color: #F8F6F6;
-  padding: 30px 0;
+  background-color: #f8f6f6;
+  padding: 30px 0 60px;
 }
 
 .search-container {
@@ -804,34 +914,41 @@ ul#que-nav li.active a {
 }
 
 .searchMain {
-  gap: 30px;
+  gap: 80px;
+}
+
+.search-main h1 {
+  margin-bottom: 24px;
 }
 
 .searches {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5px;
+  column-gap: 10px;
+  row-gap: 5px;
 }
 
 .searches a {
   width: auto;
+  font-size: 12px;
   display: inline-block;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 25px;
   text-decoration: none;
   color: black;
-  padding: 10px;
+  padding: 8px 12px;
   word-break: keep-all;
 }
 
-
 .carInsurance {
-  background-color: #00305B;
-  padding: 30px 0;
+  background-color: #00305b;
+  padding: 50px 0 70px;
 }
-
+.carInsurance h1{
+  margin-bottom: 35px;
+}
 .carInsurance h3 {
   font-size: 32px;
   color: #ffffff;
@@ -841,29 +958,57 @@ ul#que-nav li.active a {
 
 .typesOfCar {
   display: grid;
-  gap: 10px;
+  gap: 25px;
   grid-template-columns: auto auto auto auto;
 }
 
 .cars {
-  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   background-color: #ffffff;
   border: 0;
   border-radius: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  max-width: 310px;
+  margin: 0 auto;
+  width: 100%;
 }
-
-.modelName {
-  font-size: 16px;
+.carImages {
+  padding-left: 10px;
+}
+.modelName p{
+  margin: 0;
+  font-weight: 700;
 }
 
 .product-code {
-  padding: 30px 0;
+  padding: 50px 0 70px;
+}
+.above-footer {
+  border-top: 1px solid #ece9e9;
+}
+.above-footer .left-links {
+  font-size: 14px;
+}
+.above-footer .left-links p {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.above-footer .left-links a {
+  color: #282828;
+  text-decoration: none;
+}
+.above-footer .left-links span {
+  color: #707070;
 }
 
+.above-footer .d-flex {
+  justify-content: space-between;
+}
 footer {
   background: #ece9e9;
   padding: 30px 0;
@@ -905,15 +1050,38 @@ footer p {
   }
 
   .dropdown-menu {
-    width: 300px;
+    width: 170px;
   }
 
-  .nav-links a:hover {
+  .nav-links .dropdown-menu a:hover {
     color: #f4811f;
+  }
+  .in-toggle-nav {
+    display: none;
+  }
+
+  .banner-text.d-flex {
+    justify-content: space-between;
+  }
+
+  .banner-text .text-left,
+  .banner-text .banner-image {
+    width: 50%;
+  }
+
+  form {
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 1024.5px) {
+  p,
+  body {
+    font-size: 12px;
+  }
+  .love-label, .customer-name {
+    font-size: 14px;
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -928,15 +1096,25 @@ footer p {
   }
 
   .nav-links li {
-    margin: 20px;
+    margin: 10px 20px;
   }
+
+  .dropdown-menu {
+    background-color: #fff;
+  }
+  .dropdown-menu li {
+    padding: 0;
+}
 
   .nav-links a {
     color: #000;
   }
 
-  .login {
+  /* .login {
     padding-left: 0px;
+  } */
+  .login.desk-nav {
+    display: none;
   }
 
   .show {
@@ -957,17 +1135,20 @@ footer p {
   }
 
   .banner-image img {
-    width: 190px;
+    width: 220px;
   }
 
   form {
     width: 320px;
   }
 
+  .review-div .slick-slide {
+    background-size: 22px;
+}
+
   .renew-policy {
     width: 265px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -984,6 +1165,14 @@ footer p {
     gap: 5px;
   }
 
+  .hero-section {
+    padding: 40px 0 80px;
+}
+
+.what-car-insurance, .section-1, .comprehensive, .online-policy {
+  padding: 40px 0 40px;
+}
+
   .demo {
     display: flex;
     gap: 10px;
@@ -992,6 +1181,13 @@ footer p {
   .banner-text {
     width: 100%;
     text-align: center;
+  }
+  .banner-image img {
+    width: 300px;
+  }
+  .box {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .love-cust-main .d-flex {
@@ -1005,16 +1201,20 @@ footer p {
     width: 100%;
   }
 
-  .comprehensive {}
+  /* .comprehensive {
+  } */
 
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .responsive-table {
+    width: 100%;
+  }
   .responsive-table,
   .responsive-table th,
   .responsive-table td {
-    font-size: 14px;
+    font-size: 11px;
+    margin: 0 auto;
   }
 
   .list-item {
@@ -1030,7 +1230,7 @@ footer p {
   }
 
   .policy-slider {
-    width: 85%;
+    width: 70%;
   }
 
   .slider-img,
@@ -1067,6 +1267,13 @@ footer p {
     border-right: none;
     text-align: center;
   }
+  .policy-doc {
+    margin: 0;
+}
+  
+  .policy-doc a {
+    margin: 0;
+  }
 
   .buyMain-Card {
     grid-template-columns: repeat(1, 1fr);
@@ -1085,10 +1292,20 @@ footer p {
     grid-template-columns: auto auto;
   }
 
+  .product-code .responsive-table, .product-code .responsive-table th, .product-code .responsive-table td {
+    font-size: 11px;
+    max-width: 500px;
+  }
+
   table {
     display: block;
     overflow-x: auto;
   }
+
+  .review-div .d-flex {
+    align-items: center;
+    gap: 15px;
+}
 
   footer {
     background: #ece9e9;
@@ -1107,12 +1324,20 @@ footer p {
   .footer-right {
     width: 100%;
   }
-}
 
+  .review-div, .premium-main, .searchMain, .what-car-insurance .d-flex, .policy-slider .desk-row {
+    gap: 20px;
+  }
+}
 
 @media (max-width: 580.5px) {
   .typesOfCar {
     grid-template-columns: auto;
   }
-
+  .love-cust-main .d-flex {
+    max-width: 270px;
+}
+ul#que-nav li {
+  padding: 10px 10px;
+}
 }
